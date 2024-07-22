@@ -1,0 +1,33 @@
+<mat-toolbar class="mat-elevation-z8 top-bar">
+  <button mat-icon-button (click)="drawer.toggle()" style="margin-right: 1rem;" class="mat-elevation-z4">
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>
+
+<mat-drawer-container class="container">
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <div class="drawer-content">
+      <button class="custom-button" mat-flat-button (click)="navigateTo('/home')"
+      style="height: 2.5rem ;width: 95%; margin-top: 1rem; text-align: start;   background-color: #4c8677; color: white; margin-left:5px">
+        <mat-icon>home</mat-icon>
+        Home
+      </button>
+      <button mat-flat-button (click)="navigateTo('/cadastrar-pessoa')"
+      style="height: 2.5rem ;width: 95%; margin-top: 0.4rem; text-align: start;  background-color: #4c8677; color: white;margin-left:5px">
+        <mat-icon>person_add</mat-icon>
+        Cadastrar Pessoa
+      </button>
+      <button mat-flat-button (click)="navigateTo('/pessoas')"
+      style="height: 2.5rem ;width: 95%; margin-top: 0.4rem; text-align: start;  background-color: #4c8677; color: white;margin-left:5px">
+        <mat-icon>list</mat-icon>
+        Lista de Pessoas
+      </button>
+    </div>
+  </mat-drawer>
+
+  <mat-drawer-content class="sidenav-content">
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+
+</mat-drawer-container>
+

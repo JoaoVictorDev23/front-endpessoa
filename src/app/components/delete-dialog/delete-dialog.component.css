@@ -1,0 +1,27 @@
+.dialog-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.confirmation-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+button {
+  margin-left: 8px;
+}
+
+button[color="warn"] {
+  color: white;
+  background-color: #f44336; /* Cor padrão do Material Design para botão de alerta */
+}

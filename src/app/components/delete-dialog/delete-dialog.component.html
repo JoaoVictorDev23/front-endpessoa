@@ -1,0 +1,9 @@
+<div mat-dialog-content class="dialog-content">
+  <p class="confirmation-text">
+    Tem certeza que deseja deletar <strong>{{data.pessoa.nome}}</strong>?
+  </p>
+</div>
+<div mat-dialog-actions class="dialog-actions">
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button color="warn" (click)="onDeleteClick()">Deletar</button>
+</div>
